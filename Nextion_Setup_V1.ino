@@ -67,7 +67,7 @@ void calibration_forward_1(int speed)
     }
 }
 
-void calibration_forward_2(int speed)
+void calibration_back_2(int speed)
 {
   int Step_count  = 0;
   for(Step_count; Step_count< speed; Step_count++)
@@ -101,7 +101,7 @@ void calibration_back_1(int speed)
     }
 }
 
-void calibration_back_2(int speed)
+void calibration_forward_2(int speed)
 {
   int Step_count  = speed;
   for(Step_count; Step_count> 0; Step_count--)
