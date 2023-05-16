@@ -342,6 +342,36 @@ void cut_resistors_1(int number_of_sets, int number_of_resistors){
   Serial.println("Cutting 1 done");
 }
 
+void cut_resistors_1_1(long number_of_sets, long number_of_resistors){
+  myStepper.setSpeed(1000);
+  myStepper.step(-rotations_per_resistor*2);
+  delay(200);
+  for(int i = 0; i<number_of_sets; i++)
+  {
+    if(stop == 0){    
+    int Step_count = 0;
+    for(Step_count; Step_count< number_of_resistors*675 ; Step_count++)
+    // 1350 - one resistor rotation
+    // 3200 - half rotation
+    //6400 - full rotation
+    {
+        digitalWrite(enable_pin, HIGH); // enables the stepper motor
+        digitalWrite(dir_pin, HIGH);
+        digitalWrite(step_pin, LOW);
+        delayMicroseconds(500);
+        digitalWrite(step_pin, HIGH);
+        delayMicroseconds(500);
+    }
+    delay(200);
+    //Turn on both the servo motors for cutting.
+    chop_belt1();
+    nexLoop(nex_listen_list);
+    }
+  }
+
+  Serial.println("Cutting 1 done");
+}
+
 void cut_resistors_2(int number_of_sets, int number_of_resistors)
 {
   myStepper1.setSpeed(1000);
@@ -360,6 +390,35 @@ void cut_resistors_2(int number_of_sets, int number_of_resistors)
   Serial.println("Cutting 2 done");
 }
 
+void cut_resistors_2_1(long number_of_sets, long number_of_resistors){
+  myStepper1.setSpeed(1000);
+  myStepper1.step(rotations_per_resistor*2);
+  delay(200);
+  for(int i = 0; i<number_of_sets; i++)
+  {
+    if(stop == 0){    
+    long Step_count = number_of_resistors*675;
+    for(Step_count; Step_count> 0 ; Step_count--)
+    // 1350 - one resistor rotation
+    // 3200 - half rotation
+    //6400 - full rotation
+    {
+        digitalWrite(enable_pin, HIGH); // enables the stepper motor
+        digitalWrite(dir_pin_2, LOW);
+        digitalWrite(step_pin_2, LOW);
+        delayMicroseconds(500);
+        digitalWrite(step_pin_2, HIGH);
+        delayMicroseconds(500);
+    }
+    delay(200);
+    //Turn on both the servo motors for cutting.
+    chop_belt2();
+    nexLoop(nex_listen_list);
+    }
+  }
+
+  Serial.println("Cutting 1 done");
+}
 
 void setup(void) {
   Serial.begin(9600);
