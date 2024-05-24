@@ -8,6 +8,11 @@
 
 
 # Resistor Reel Cutter Machine
+
+<picture>
+  <img src="Images/resistor_reel_cutter_,machine.png" alt="logo" width="300">
+</picture>
+
 </div>
 
 ## Table of Contents 📃
