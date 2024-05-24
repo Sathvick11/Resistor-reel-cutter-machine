@@ -4,7 +4,8 @@
   <img src="Images/Thws-logo_English.png" alt="logo" width="200">
 </picture>
 <br/>
-<span style="font-size:3.2em;"> Resistor Reel Cutter Machine </span>
+
+# Resistor Reel Cutter Machine
 </div>
 
 ## Collaborators
