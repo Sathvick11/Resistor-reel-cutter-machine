@@ -5,8 +5,15 @@
 </picture>
 <br/>
 
+
+
 # Resistor Reel Cutter Machine
 </div>
+
+## Table of Contents 📃
+- [Collaborators 👥](#collaborators)
+- [Resistor Reel Cutter Machine](#resistor-reel-cutter-machine-1)
+- [Documentation](#documentation)
 
 ## Collaborators
 
@@ -23,3 +30,6 @@ Hello everyone 👋
 This is the GitHub repository for the engineering project "**Resistor Reel Cutter Machine**"which was designed at the [Technical University of Applied Sciences Würzburg - Schweinfurt](https://www.thws.de)
 
 In this repository, you can find the report for the concept and usage of the product in `Report/Engineering_Project_Report.pdf`. To understand better about the working of the actuators and the HMI display, please refer to the folders `Code` and `Nextion_Setup_V1.ino` respectively.
+
+## Documentation
+For more documentation about the project, please refer to the report [here](Report/Engineering_Project_Report.pdf)
