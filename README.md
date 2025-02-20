@@ -24,8 +24,8 @@
 
 | Team Members | Roles |
 | ------------ | ----- |
-| [Sai Karthik Shankar](https://github.comSai-Karthik-Shankar) | *Project Leader* </br>**Mechanical** (Cutting Module and Housing) |
-| [Sathvick Bindinganavale Srinath](https://github.comSathvick11) | **Software & Electrical** (Arduino codefor Actuation and  wiring plan) |
+| [Sai Karthik Shankar](https://github.com/Sai-Karthik-Shankar) | *Project Leader* </br>**Mechanical** (Cutting Module and Housing) |
+| [Sathvick Bindinganavale Srinath](https://github.com/Sathvick11) | **Software & Electrical** (Arduino codefor Actuation and  wiring plan) |
 | [Aniketh Padmakar](https://github.com/anibulbs) |**Minutes Taker / Software** (Display software andDisplay arduino code ) |
 | Samrat Shantesh Ukkali | Concept of PCB Design |
 
